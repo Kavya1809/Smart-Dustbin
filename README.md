@@ -12,22 +12,30 @@ Uses ultrasonic waves to measure the distance to an object.
 Average of 3 distance measurements is calculated for greater accuracy.
 Servo motor is triggered to perform an action when the object is within a specified distance.
 The servo motor is initially set to a closed position (e.g., lid closed) when powered on.
+
+
 **Components Required**
 Arduino Board (e.g., Arduino Uno)
 HC-SR04 Ultrasonic Sensor
 Servo Motor
 LED (optional for indication)
 Jumper wires
+
+
 **Pin Configuration**
 Trig Pin: Connected to Pin 5 on Arduino
 Echo Pin: Connected to Pin 6 on Arduino
 Servo Pin: Connected to Pin 7 on Arduino
 LED (optional): Connected to Pin 10 on Arduino
+
+
 **How It Works**
 The Arduino reads the distance using the ultrasonic sensor.
 If the measured distance is less than 30 cm, the servo motor is triggered to perform an action (e.g., open a cap).
 The servo motor stays in the triggered position for a set time before returning to its default position.
 The distance is continuously displayed in the serial monitor.
+
+
 **Installation Instructions**
 Download or clone this repository.
 Open the Ultrasonic_Servo_Control.ino file in the Arduino IDE.
